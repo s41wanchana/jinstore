@@ -1,5 +1,5 @@
 import Notification from "./../utils/Notification";
-import Header from "./../utils/Header";
+import Header from "../utils/header-components/Header";
 import Footer from "./../utils/Footer";
 import TapPanel from "./landing-page-components/TapPanel";
 import Categories from "./landing-page-components/Categories";
