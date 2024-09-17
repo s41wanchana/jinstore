@@ -1,12 +1,12 @@
-import Notification from "./../utils/Notification";
-import Header from "../utils/header-components/Header";
-import Footer from "./../utils/Footer";
-import TapPanel from "./landing-page-components/TapPanel";
-import Categories from "./landing-page-components/Categories";
-import EditorPick from "./landing-page-components/EditorPick";
-import CategoryProducts from "./landing-page-components/CategoryProducts";
-import BestSeller from "./landing-page-components/BestSeller";
-import News from "./landing-page-components/News";
+import Notification from "../components/common/notification/Notification";
+import Header from "../components/common/header/Header";
+import Footer from "../components/common/footer/Footer";
+import TapPanel from "../components/landing-page/TapPanel";
+import Categories from "../components/landing-page/Categories";
+import EditorPick from "../components/landing-page/EditorPick";
+import CategoryProducts from "../components/landing-page/CategoryProducts";
+import BestSeller from "../components/landing-page/BestSeller";
+import News from "../components/landing-page/News";
 
 export default function Home() {
   return (
