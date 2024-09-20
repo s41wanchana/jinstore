@@ -7,6 +7,7 @@ import EditorPick from "../components/landing-page/EditorPick";
 import CategoryProducts from "../components/landing-page/CategoryProducts";
 import BestSeller from "../components/landing-page/BestSeller";
 import News from "../components/landing-page/News";
+import PromotionBar from "@/components/common/PromotionBar";
 
 export default function Home() {
   return (
@@ -17,6 +18,20 @@ export default function Home() {
       <Categories />
       <EditorPick />
       <CategoryProducts />
+      <PromotionBar
+        id={"landing-page-promotion"}
+        header={"In store or online your health & safety is our top priority"}
+        description={
+          "The only supermarket that makes your life easier, makes you enjoy life and makes it better"
+        }
+        headerFontSize={22}
+        headerColor={"#EA580C"}
+        headerFontWeight={"Bold"}
+        descriptionFontSize={14}
+        descriptionColor={"#6B7280"}
+        bgColor={"#FFEDD5"}
+        borderColor={"#FFF7ED"}
+      />
       <BestSeller />
       <News />
       <Footer />
