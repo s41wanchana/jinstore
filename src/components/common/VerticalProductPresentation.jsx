@@ -15,7 +15,10 @@ export default function VerticalProductPresentation({
   originalPrice,
 }) {
   return (
-    <div id={id} className="border-[#E5E7EB] border-[1px]">
+    <div
+      id={id}
+      className="border-[#E5E7EB] border-[1px] flex flex-col justify-center items-center p-4"
+    >
       <div id="image-container" className="relative">
         {discount && (
           <div
