@@ -2,7 +2,7 @@ export default function FirstRow() {
   return (
     <div
       id="first-row-header"
-      className="w-full h-7 border-b-[#E5E7EB] border-b-[1px] px-48 flex justify-between"
+      className="w-full h-[41px] border-b-[#E5E7EB] border-b-[1px] px-48 flex justify-between"
     >
       <div
         id="left-side-nav"
