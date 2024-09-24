@@ -2,7 +2,10 @@ import Tag from "./Tag";
 
 export default function Categories() {
   return (
-    <div id="categories-nav-container" className="flex gap-6">
+    <div
+      id="categories-nav-container"
+      className="flex justify-between gap-[30px] px-48 py-10"
+    >
       <Tag
         id={"fruit-n-vegies-nav"}
         imageUrl={"/images/categories-img/fruit-n-vegies-category.png"}
