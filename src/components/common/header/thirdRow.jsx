@@ -1,7 +1,10 @@
 export default function ThirdRow() {
   return (
-    <div id="third-row-header" className="w-full h-[48px] flex items-center">
-      <div id="left-side-nav" className="basis-1/2 flex items-center">
+    <div
+      id="third-row-header"
+      className="w-full h-[48px] px-48 flex justify-between items-center"
+    >
+      <div id="left-side-nav" className="flex items-center gap-[25px]">
         <div id="home-nav-container">
           <p className="text-[15px] font-semibold">Home</p>
         </div>
@@ -27,7 +30,7 @@ export default function ThirdRow() {
         </div>
       </div>
 
-      <div id="right-side-nav" className="basis-1/2 flex items-center ">
+      <div id="right-side-nav" className="flex items-center gap-[25px]">
         <div id="trending-products-nav-container">
           <p className="text-[15px] font-semibold">Trending Products</p>
         </div>
@@ -35,7 +38,7 @@ export default function ThirdRow() {
         <div id="almost-finished-nav-container">
           <p className="text-[15px] text-[#DC2626] font-semibold">
             Almost Finished{" "}
-            <span className="bg-gradient-to-r from-[#DC2626] to-[#EA580C] text-[10px] font-bold text-white p-1">
+            <span className="w-[37px] h-[21px] px-[6.5px] py-1 rounded bg-gradient-to-r from-[#DC2626] to-[#EA580C] text-[10px] font-bold leading-[10px] text-white">
               SALE
             </span>
           </p>
