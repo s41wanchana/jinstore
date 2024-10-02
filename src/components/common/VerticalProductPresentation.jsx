@@ -17,29 +17,34 @@ export default function VerticalProductPresentation({
   return (
     <div
       id={id}
-      className="border-[#E5E7EB] border-[1px] flex flex-col justify-center items-center p-4"
+      className="border-[#E5E7EB] border-[1px] flex flex-col pt-6 pb-9 px-4"
     >
-      <div id="image-container" className="relative">
+      <div
+        id="image-container"
+        className="relative mb-[12px] flex flex-col gap-1"
+      >
         {discount && (
           <div
             id="discount"
-            className="bg-[#DC2626] text-[10px] text-[#FEF2F2] font-extrabold rounded-l-[14px] rounded-r-[40px] w-[38.3px] h-[24px] flex items-center justify-center absolute"
+            className="bg-[#DC2626] text-[10px] text-[#FEF2F2] font-extrabold rounded-l-[14px] rounded-r-[40px] w-[38.3px] h-[24px] flex items-center justify-center absolute top-0 left-0"
           >
             {`${discount}%`}
           </div>
         )}
         <FavoriteBorderOutlinedIcon className="absolute right-0 hover:cursor-pointer" />
-        <Image
-          src={imageUrl}
-          alt={`${id}-img`}
-          width={width ? width : 199}
-          height={height ? height : 199}
-        />
+        <div className="flex justify-center">
+          <Image
+            src={imageUrl}
+            alt={`${id}-img`}
+            width={width ? width : 199}
+            height={height ? height : 199}
+          />
+        </div>
         <div
           id="label"
-          className="w-[80px] h-[24px] bg-gradient-to-r from-[#D4FC79] to-[#96E6A1] rounded-l-[14px] rounded-r-[40px] text-[#166534] text-[10px] font-extrabold flex items-center"
+          className="w-auto h-[24px] bg-gradient-to-r from-[#D4FC79] to-[#96E6A1] rounded-l-[40px] rounded-r-[40px] text-[#166534] text-[10px] font-extrabold p-[6px] flex justify-center items-center gap-1 absolute bottom-[-12px] left-0"
         >
-          <div>
+          <div className="">
             <Image
               src="/images/organic-icon.png"
               alt="organic-icon"
@@ -51,26 +56,23 @@ export default function VerticalProductPresentation({
         </div>
         <button
           id="add-button"
-          className="rounded-full w-8 h-8 bg-[#634C9F] text-white text-[18px] pl-0.25 absolute right-0 bottom-0"
+          className="rounded-full w-8 h-8 bg-[#634C9F] text-white text-[18px] pl-0.25 absolute right-0 bottom-[-12px]"
         >
           +
         </button>
       </div>
-      <Stack spacing={1}>
-        <Rating
-          name="avg-rating-read"
-          defaultValue={4}
-          precision={0.5}
-          readOnly
-        />
-      </Stack>
-      <article id="product-description">
-        <h4 className="text-[#030712] text-[14px] font-medium text-wrap">
+
+      <div className="pt-2 flex items-center">
+        <Rating name="size-large" defaultValue={2} size="small" />
+      </div>
+
+      <article id="product-description" className="flex flex-col gap-4">
+        <h4 className="pt-[7.5px] text-[#030712] text-[14px] font-medium text-start text-wrap tracking-[-0.28px] leading-[18.2px]">
           {header}
         </h4>
-        <p className="text-[12px] text-[#4B5563] text-wrap">{description}</p>
+        <p className="text-[12px] text-[#4B5563]">{description}</p>
       </article>
-      <p className="text-[22px] text-[#DC2626] font-bold">
+      <p className="pt-[14px] text-[22px] text-[#DC2626] font-sta font-bold">
         {`$${dealPrice}`}{" "}
         <span className="text-[16.1px] text-[#111827] font-medium line-through">
           {`$${originalPrice}`}

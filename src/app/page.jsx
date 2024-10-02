@@ -16,24 +16,26 @@ export default function Home() {
       <Header />
       <TapPanel />
       <Categories />
-      <EditorPick />
-      <CategoryProducts />
-      <PromotionBar
-        id={"landing-page-promotion"}
-        header={"In store or online your health & safety is our top priority"}
-        description={
-          "The only supermarket that makes your life easier, makes you enjoy life and makes it better"
-        }
-        headerFontSize={22}
-        headerColor={"#EA580C"}
-        headerFontWeight={"Bold"}
-        descriptionFontSize={14}
-        descriptionColor={"#6B7280"}
-        bgColor={"#FFEDD5"}
-        borderColor={"#FFF7ED"}
-      />
-      <BestSeller />
-      <News />
+      <div id="landing-page-main-content-bg" className="bg-[#E5E7EB]">
+        <EditorPick />
+        <CategoryProducts />
+        <PromotionBar
+          id={"landing-page-promotion"}
+          header={"In store or online your health & safety is our top priority"}
+          description={
+            "The only supermarket that makes your life easier, makes you enjoy life and makes it better"
+          }
+          headerFontSize={22}
+          headerColor={"#EA580C"}
+          headerFontWeight={"Bold"}
+          descriptionFontSize={14}
+          descriptionColor={"#6B7280"}
+          bgColor={"#FFEDD5"}
+          borderColor={"#FFF7ED"}
+        />
+        <BestSeller />
+        <News />
+      </div>
       <Footer />
     </>
   );
