@@ -10,6 +10,7 @@ export default function VerticalProductPresentation({
   width,
   height,
   header,
+  headerFontSize,
   description,
   dealPrice,
   originalPrice,
@@ -17,7 +18,7 @@ export default function VerticalProductPresentation({
   return (
     <div
       id={id}
-      className="border-[#E5E7EB] border-[1px] flex flex-col pt-6 pb-9 px-4"
+      className="w-full h-full border-[#E5E7EB] border-[1px] flex flex-col pt-6 pb-9 px-4"
     >
       <div
         id="image-container"
@@ -67,7 +68,10 @@ export default function VerticalProductPresentation({
       </div>
 
       <article id="product-description" className="flex flex-col gap-4">
-        <h4 className="pt-[7.5px] text-[#030712] text-[14px] font-medium text-start text-wrap tracking-[-0.28px] leading-[18.2px]">
+        <h4
+          className="pt-[7.5px] text-[#030712] text-[14px] font-medium text-start text-wrap tracking-[-0.28px] leading-[18.2px]"
+          style={{ fontSize: headerFontSize ? headerFontSize : "14px" }}
+        >
           {header}
         </h4>
         <p className="text-[12px] text-[#4B5563]">{description}</p>

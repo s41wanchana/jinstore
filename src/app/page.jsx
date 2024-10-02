@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <TapPanel />
       <Categories />
-      <div id="landing-page-main-content-bg" className="bg-[#E5E7EB]">
+      <div id="landing-page-main-content-bg" className="bg-[#ECEBEE]">
         <EditorPick />
         <CategoryProducts />
         <PromotionBar
