@@ -6,7 +6,7 @@ export default function EditorPick() {
   return (
     <div
       id="editor-pick-container"
-      className="w-full h-auto flex flex-col px-48 pt-[60px] gap-5"
+      className="w-full h-auto flex flex-col pt-[60px] gap-5"
     >
       <div id="header-container" className="w-full flex">
         <header className="basis-1/2 flex items-baseline gap-4">

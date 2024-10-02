@@ -16,7 +16,10 @@ export default function Home() {
       <Header />
       <TapPanel />
       <Categories />
-      <div id="landing-page-main-content-bg" className="bg-[#ECEBEE]">
+      <div
+        id="landing-page-main-content-bg"
+        className="bg-[#ECEBEE] px-48 flex flex-col gap-5"
+      >
         <EditorPick />
         <CategoryProducts />
         <PromotionBar
@@ -30,8 +33,11 @@ export default function Home() {
           headerFontWeight={"Bold"}
           descriptionFontSize={14}
           descriptionColor={"#6B7280"}
-          bgColor={"#FFEDD5"}
+          bgColor={"#FFF7ED"}
           borderColor={"#FFF7ED"}
+          imgUrl={"/images/promo.png"}
+          imgWidth={353}
+          imgHeight={572}
         />
         <BestSeller />
         <News />

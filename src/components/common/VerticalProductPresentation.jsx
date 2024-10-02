@@ -69,7 +69,7 @@ export default function VerticalProductPresentation({
 
       <article id="product-description" className="flex flex-col gap-4">
         <h4
-          className="pt-[7.5px] text-[#030712] text-[14px] font-medium text-start text-wrap tracking-[-0.28px] leading-[18.2px]"
+          className="pt-[7.5px] text-[#030712] text-[14px] font-medium text-start break-words tracking-[-0.28px] leading-[18.2px]"
           style={{ fontSize: headerFontSize ? headerFontSize : "14px" }}
         >
           {header}

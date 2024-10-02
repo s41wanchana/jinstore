@@ -4,10 +4,7 @@ import StraightOutlinedIcon from "@mui/icons-material/StraightOutlined";
 
 export default function CategoryProducts() {
   return (
-    <div
-      id="category-product-container"
-      className="px-48 pt-7 flex flex-col gap-5"
-    >
+    <div id="category-product-container" className="pt-7 flex flex-col gap-5">
       <div id="category-product-header-container" className="w-full flex">
         <header className="basis-1/2 flex items-baseline gap-2">
           <h1 className="font-bold text-[18px]">Category Products</h1>
